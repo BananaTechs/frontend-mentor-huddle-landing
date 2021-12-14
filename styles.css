@@ -118,9 +118,19 @@ h1 {
     color: white;
 }
 
-.socials span {
+.socials a {
     font-size: small;
     margin: 0 0.2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.socials a:visited {
+    color: inherit;
+}
+
+.socials a:hover  {
+    color: var(--huddleMagenta);
 }
 
 @media only screen and (min-width: 768px) {
@@ -132,7 +142,6 @@ h1 {
 
     .mockups {
         width: 55%;
-        /* max-width: 50vw; */
         margin-bottom: 0;
     }
 
@@ -154,7 +163,7 @@ h1 {
         margin-right: 5rem;
     }
 
-    .socials span {
+    .socials a {
         font-size: 1rem;
     }
 }
@@ -175,7 +184,6 @@ h1 {
 }
 
 .attribution a {
-    /* color: hsl(228, 45%, 44%); */
     color: khaki;
     text-decoration: none;
 }
