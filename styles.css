@@ -21,7 +21,6 @@ body {
     min-height: 100vh;
     background-color: var(--huddleViolet);
     background-image: url("images/bg-mobile.svg");
-    background-size: 100% auto;
     background-repeat: no-repeat;
 
     font-family: 'Open Sans', sans-serif;
@@ -39,7 +38,6 @@ h1 {
     body {
         background-image: url("images/bg-desktop.svg");
         background-size: auto 100%;
-
         text-align: left;
     }
 
@@ -48,7 +46,7 @@ h1 {
     }
 }
 
-/* -------------------- Logo -------------------- */
+/* -------------------- Header -------------------- */
 
 header {
     padding: 2rem;
@@ -56,7 +54,6 @@ header {
 }
 
 .logo {
-    /* margin-left: 1em; */
     width: 8rem;
 }
 
@@ -83,7 +80,6 @@ header {
 .mockups {
     padding: 0.5rem 0;
     margin-bottom: 2rem;
-    /* max-width: 100%; */
 }
 
 .hero-txt {
