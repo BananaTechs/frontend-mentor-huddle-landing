@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-/* -------------------- Background Image -------------------- */
+/* -------------------- Background Image & Globals -------------------- */
 
 body {
     min-height: 100vh;
@@ -19,13 +19,27 @@ body {
     background-repeat: no-repeat;
 
     font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    text-align: center;
     color: white;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
 }
 
 @media only screen and (min-width: 768px) {
     body {
         background-image: url("images/bg-desktop.svg");
         background-size: auto 100%;
+
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.2rem;
     }
 }
 
@@ -33,6 +47,7 @@ body {
 
 .header {
     padding: 2rem;
+    text-align: left;
 }
 
 .logo {
@@ -52,8 +67,69 @@ body {
 
 /* -------------------- Hero -------------------- */
 
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 2rem;
+}
+
 .mockups {
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
     max-width: 100%;
+}
+
+.hero-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.hero-txt h1 {
+    margin-bottom: 1rem;
+}
+
+.hero-txt p {
+    margin-bottom: 1.5rem;
+}
+
+.hero-txt button {
+    width: 12rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border-style: none;
+    cursor: pointer;
+    font-size: smaller;
+    color: var(--huddleViolet);
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        padding: 0 4rem;
+    }
+
+    .mockups {
+        width: 55%;
+    }
+
+    .hero-txt {
+        padding: 3rem;
+        padding-right: 1rem;
+        align-items: flex-start;
+    }
+
+    .hero-txt button {
+        width: 11rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+    }
+
+    .hero-txt button:hover {
+        background-color: var(--huddleMagenta);
+    }
 }
 
