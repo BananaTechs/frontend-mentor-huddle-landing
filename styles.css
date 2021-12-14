@@ -98,12 +98,18 @@ h1 {
 
 .hero-txt button {
     width: 12rem;
-    height: 2rem;
-    border-radius: 1rem;
+    height: 2.4rem;
+    border-radius: 1.2rem;
     border-style: none;
     cursor: pointer;
     font-size: smaller;
     color: var(--huddleViolet);
+    box-shadow: 2px 2px 5px #303030;
+}
+
+.hero-txt button:hover {
+    background-color: var(--huddleMagenta);
+    color: white;
 }
 
 @media only screen and (min-width: 768px) {
@@ -114,6 +120,7 @@ h1 {
 
     .mockups {
         width: 55%;
+        height: auto;
     }
 
     .hero-txt {
@@ -127,9 +134,21 @@ h1 {
         height: 3rem;
         border-radius: 1.5rem;
     }
-
-    .hero-txt button:hover {
-        background-color: var(--huddleMagenta);
-    }
 }
 
+/* -------------------- Footer -------------------- */
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    /* color: hsl(228, 45%, 44%); */
+    color: khaki;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
