@@ -1,20 +1,59 @@
+:root {
+    --huddleViolet: hsl(257, 40%, 49%);
+    --huddleMagenta: hsl(300, 69%, 71%);
+}
+
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* -------------------- Background Image -------------------- */
+
 body {
     min-height: 100vh;
-    background-color: hsl(257, 40%, 49%);
+    background-color: var(--huddleViolet);
     background-image: url("images/bg-mobile.svg");
-    background-size: cover;
+    background-size: 100% auto;
     background-repeat: no-repeat;
+
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     body {
         background-image: url("images/bg-desktop.svg");
         background-size: auto 100%;
     }
 }
+
+/* -------------------- Logo -------------------- */
+
+.header {
+    padding: 2rem;
+}
+
+.logo {
+    /* margin-left: 1em; */
+    width: 8rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        padding: 3.5rem;
+    }
+
+    .logo {
+        width: 12rem;
+    }
+}
+
+/* -------------------- Hero -------------------- */
+
+.mockups {
+    padding: 0.5rem 1.5rem;
+    max-width: 100%;
+}
+
